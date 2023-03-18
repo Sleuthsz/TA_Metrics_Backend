@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "ta_metrics_project/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ta_metrics_project/wsgi.py"
+    }
+  ]
+}
